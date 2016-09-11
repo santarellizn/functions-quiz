@@ -38,14 +38,14 @@ def two_as_one(a,b,c):
 		return True
 	return False
 
-#def pig_latinify(st):
-	#low = st.lower()
-	#first = low.lstrip(None)
-	#string = first.rstrip(None)
-	#if string[:1] == 'a' or string[:1] == 'e' or string[:1] == 'i' or string[:1] == 'o' or string[:1] == 'u':
-	#	return string + 'way'
-	#else:
-	#	return string + 'ay'
+def pig_latinify(st):
+	low = st.lower()
+	first = low.lstrip(None)
+	string = first.rstrip(None)
+	if string[:1] == 'a' or string[:1] == 'e' or string[:1] == 'i' or string[:1] == 'o' or string[:1] == 'u':
+		return string + 'way'
+	else:
+		return string[1:] + string[0] + 'ay'
 
-#print pig_latinify('   Apple   ')
-#print pig_latinify('dank')
+print pig_latinify('   Apple   ')
+print pig_latinify('dank')
